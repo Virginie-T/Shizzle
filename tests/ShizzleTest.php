@@ -40,6 +40,10 @@
             $this->assertEquals("zuzan", $result);
         }
 
+        /*input: “susan has some serious skills”
+        output: “zuzan haz zome zeriouz zkillz”
+
+        spec: replace all “s” by “z” in a whole word*/
         function test_translate_multipleWord()
         {
             //arrange
@@ -53,6 +57,10 @@
             $this->assertEquals("zuzan haz zome zeriouz zkillz", $result);
         }
 
+        /*input: “susan”
+        output: “Suzan”
+
+        Spec: replace all “s” with “z” in a whole word, unless it is the first word*/
         function test_translate_firstLetter()
         {
             //arrange
