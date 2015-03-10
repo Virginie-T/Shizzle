@@ -7,11 +7,16 @@
             $z_array = array();
             foreach($input_array as $letter)
             {
-                if($letter == "s") {
+                if ($letter == "S") {
+                    array_push($z_array, $letter);
+                }
+                elseif ($letter == "s") {
                     array_push($z_array, "z");
                 }
+                else {
+                    array_push($z_array, $letter);
+                }
             }
-
             return implode($z_array);
         }
     }
